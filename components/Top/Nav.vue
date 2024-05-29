@@ -1,6 +1,6 @@
 <script setup>
-
 </script>
+
 <template>
  <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
@@ -16,6 +16,9 @@
   </div>
 
   <div id="navbarBasicExample" class="navbar-menu">
+
+    
+    
     <div class="navbar-start">
       <NuxtLink to="/" class="navbar-item">
         Home
@@ -34,6 +37,7 @@
           More
         </a>
 
+
         <div class="navbar-dropdown">
           <a class="navbar-item">
             About
@@ -51,6 +55,12 @@
         </div>
       </div>
     </div>
+   
+    <div class="content has-text-centered">
+    <p>
+      Prace wykonali: Szymon Fierek i Jakub Mazur
+    </p>
+  </div>
 
     <div class="navbar-end">
       <div class="navbar-item">
@@ -66,7 +76,71 @@
     </div>
   </div>
 </nav>
-</template>
-<style scoped lang="scss">
 
+</template>
+
+<style scoped lang="scss">
+.navbar {
+  background-color: #f8f9fa;
+  padding: 0.5rem 1rem;
+  border-bottom: 2px solid #eaeaea;
+
+  .navbar-item {
+    font-size: 1.1rem;
+    color: #343a40;
+    &:hover {
+      background-color: #e9ecef;
+      color: #007bff;
+    }
+  }
+
+  .navbar-link {
+    font-weight: bold;
+    color: #343a40;
+    &:hover {
+      color: #007bff;
+    }
+  }
+
+  .navbar-dropdown {
+    background-color: #f8f9fa;
+    .navbar-item {
+      color: #343a40;
+      &:hover {
+        background-color: #e9ecef;
+        color: #007bff;
+      }
+    }
+  }
+
+  .navbar-burger {
+    color: #343a40;
+    &:hover {
+      color: #007bff;
+    }
+  }
+
+  .buttons .button {
+    margin-left: 0.5rem;
+  }
+
+  .button.is-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    &:hover {
+      background-color: #0056b3;
+      border-color: #004085;
+    }
+  }
+
+  .button.is-light {
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+    color: #343a40;
+    &:hover {
+      background-color: #e9ecef;
+      border-color: #dae0e5;
+    }
+  }
+}
 </style>
